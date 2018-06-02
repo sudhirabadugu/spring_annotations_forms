@@ -15,7 +15,7 @@ public String hello()
 	return "hello";
 }
 
-@RequestMapping(value="/showform", method = RequestMethod.GET)
+@RequestMapping("/showform")
 public String showform(Model model)
 {
 	Student st= new Student();
@@ -26,7 +26,7 @@ public String showform(Model model)
 	//model.addAttribute(, arg1)
 	return "main_menu";
 }
-@RequestMapping(value="/processform",method=RequestMethod.POST)
+@RequestMapping("/processform")
 public String processform(@ModelAttribute("student")Student st)
 {
 	System.out.println("the first name"+st.getFirstName());
