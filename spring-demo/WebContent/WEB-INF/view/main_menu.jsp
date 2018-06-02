@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<form method ="post" action="processform" modelAttribute="student" >
+<form method ="get" action="processform" modelAttribute="student" >
 	<br>First Name: <input  path="firstName"/>
 
 	<br>Last Name: <input path="lastName"/>
